@@ -1,7 +1,8 @@
 {
     "name": "suitmedia-comment-box",
-    "version": "0.1.0",
+    "version": "1.1.1",
     "private": true,
+    "author": "ferdianarid",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
@@ -13,7 +14,8 @@
         "json-server": "^0.17.0",
         "next": "12.1.0",
         "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react-dom": "17.0.2",
+        "react-icons": "^4.3.1"
     },
     "devDependencies": {
         "@types/jquery": "^3.5.14",
