@@ -8,27 +8,18 @@ import { TopicList } from '../apis'
 import TopicsComponent from '@/components/moleculs/TopicsComponent'
 import { ITopicsInterface } from '@/interfaces/ITopicList'
 import PagesLayouts from 'layouts/PagesLayouts'
-import { stringify } from 'querystring'
 import SecondaryButton from '@/components/atoms/SecondaryButton'
+import FormComment from '@/components/organism/FormComment'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   const [comments, setComments] = useState<ICommentsList[]>([])
   const [replies, setReplies] = useState([])
   const [count, setCount] = useState(22)
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [newComment, setNewComment] = useState("")
-
-  const postComment = { name, email, newComment }
-
-  const ResetComment = () => {
-    setName("")
-    setEmail("")
-    setNewComment("")
-  }
 
   useEffect(() => {
-    console.log("Use Effect")
+    console.log("Side Effect Test")
+
     $.ajax({
       method: 'GET',
       url: "http://localhost:5500/comments"
@@ -45,6 +36,14 @@ const Home: NextPage = () => {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>Forum Anak IT - Homepage</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="keywords" content="forum anak it" />
+        <meta name='author' content="ferdian" />
+      </Head>
       {/* <Navbar /> */}
       <PagesLayouts>
         <main className="pages">
@@ -82,20 +81,10 @@ const Home: NextPage = () => {
 
             {/* Add Comment Title */}
             <section className='flex items-center justify-between'>
-              <h2>Tambahkan Komentar</h2>
+              <h2 className='text-dark-brown'>Tambahkan Komentar</h2>
               <div className='line2'></div>
             </section>
-
-            {/* Form Comment */}
-            <section className='form-comment'>
-              <input type="text" name="nama" onChange={event => setName(event.target.value)} value={name} id="nama" placeholder="Nama" className='input' />
-              <input type="email" name="email" value={email} onChange={event => setEmail(event.target.value)} id="email" placeholder="Email" className='input' />
-              <textarea name="newComment" value={newComment} onChange={event => setNewComment(event.target.value)} id="newComment" cols={60} rows={10} placeholder={'Komentar Anda'}></textarea>
-              <div className='button-action'>
-                <button onClick={() => ResetComment()} className="reset button">Reset</button>
-                <button onClick={() => alert(JSON.stringify(postComment))} className="submit button">Submit</button>
-              </div>
-            </section>
+            <FormComment />
           </section>
 
           {/* Sidebar Menu */}
