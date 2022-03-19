@@ -1,0 +1,205 @@
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+    font-family: $primary-font
+.title
+    font-size: 32px
+    margin: 20px
+
+.primary
+    background-color: #4542dd
+    color: $white-color
+
+.warning
+    background-color: #bfdb1d
+    color: $white-color
+
+.danger
+    background-color: #cc3737
+    color: $white-color
+
+.success
+    background-color: #44bb1f
+    color: $white-color
+
+.info
+    background-color: aqua
+    color: $white-color
+
+.secondary
+    background-color: gray
+    color: $dark-color
+
+.navbar
+    padding-top: 10px
+    padding-bottom: 10px
+    background-color: $dark-brown-color
+    color: $text-white
+    transition: all .5s
+
+.search-bar
+    padding: 10px 16px
+    border-radius: 4px
+    border: none
+    background-color: #e0cdcd
+    width: 550px
+
+.pages
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+.content
+    margin-top: 48px
+    margin-bottom: 48px
+    max-width: 800px
+    .headline
+        padding-right: 50px
+
+.title-comment
+    justify-content: space-between
+
+.sidemenu
+    max-width: 240px
+    margin-top: 48px
+    margin-bottom: 48px
+    max-width: 500px
+    margin-left: 0px
+    border-left: .5px solid $dark-brown-color
+    padding-left: 24px
+    // background-color: $dark-brown-color
+    .topicList
+        display: flex
+        align-items: center
+        grid-gap: 16px
+        .listnumber
+            padding: 6px 12px
+            width: fit-content
+            background-color: $dark-brown-color
+            p
+            :last-child
+                margin-top: 30px
+
+.pages
+    padding-left: 100px
+    padding-right: 100px
+
+.posts
+    padding: 48px 100px
+
+.line
+    width: 100%
+    margin-right: auto
+    margin-left: 20px
+    border-top: .5px solid $text-green
+.line2
+    width: 65%
+    margin-left: 20px
+    border-top: .5px solid $text-green
+
+.forms
+    width: 600px
+    max-width: 600px
+    border: .5px solid $dark-brown-color
+    padding: 18px 40px
+    padding-top: 20px
+
+.input
+    padding: 10px 16px
+    width: 50%
+    margin-top: 20px
+    border-radius: 4px
+    border: .5px solid $green-color
+
+.input2
+    padding: 10px 16px
+    width: 100%
+    margin-top: 10px
+    border-radius: 4px
+    border: .5px solid $green-color
+
+.form-group
+    display: flex
+    flex-direction: column
+    margin: 30px 0
+
+.button-action
+    margin-top: 20px
+
+.button
+    transition: all .5s
+    padding: 10px 26px
+    border-radius: 4px
+    border: none
+    font-weight: 600
+    :hover
+        cursor: pointer
+
+.reset
+    background-color: $gray-color
+    color: $dark-brown-color
+    :hover
+        cursor: pointer
+
+.submit
+    margin-left: 10px
+    background-color: $dark-brown-color
+    color: $white-color
+
+.login
+    background-color: $dark-brown-color
+    color: $white-color
+    margin-bottom: 16px
+
+.form-comment
+    display: flex
+    flex-direction: column
+
+textarea
+    padding: 10px 16px
+    margin-top: 20px
+    margin-right: 100px
+    border-radius: 4px
+    border: .5px solid $green-color
+
+.comments
+    display: grid
+    margin: 30px 0
+    grid-template-columns: 3
+    grid-gap: 40px
+    .comment-card
+        display: flex
+        grid-gap: 40px
+        .author
+            font-size: 20px
+            font-weight: 600
+        .date
+            font-size: 14px
+            font-weight: 500
+            padding: 10px 0
+        .avatar
+            font-weight: 400
+            margin: 10px 0
+            width: 100px
+        .message
+            font-size: 16px
+            font-weight: normal
+            line-height: 1.5
+        .action
+            display: flex
+            align-items: center
+            .likecount
+                font-size: 14px
+                margin-top: 10px
+                font-weight: 400
+                margin-right: 16px
+            .like, .dislike
+                padding: 4px 8px
+                margin: 0 4px
+        .replies
+            display: flex
+            margin-top: 40px
+            grid-gap: 40px

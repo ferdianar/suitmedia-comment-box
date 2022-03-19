@@ -1,5 +1,5 @@
 
-## Next.js Redux Architectures Folders
+## Suitmedia Comment Box
 
 First, run the development server:
 
