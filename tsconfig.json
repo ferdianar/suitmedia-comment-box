@@ -13,6 +13,7 @@
       "@/styles/*": ["styles/*"],
       "@/interfaces/*": ["interfaces/*"],
       "@/helpers/*": ["helpers/*"],
+      "@/layouts/*": ["layouts/*"],
     },
     "lib": [
       "dom",
