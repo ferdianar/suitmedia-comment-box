@@ -38,8 +38,8 @@ const Home: NextPage = () => {
     <React.Fragment>
       <Head>
         <title>Forum Anak IT - Homepage</title>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=Edge, chrome" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="keywords" content="forum anak it" />
         <meta name='author' content="ferdian" />
@@ -64,6 +64,7 @@ const Home: NextPage = () => {
                 {
                   comments.map((itemsComment: ICommentsList) => (
                     <Comments
+                      key={itemsComment.id}
                       id={itemsComment.id}
                       author={itemsComment.author}
                       avatar={itemsComment.avatar}
@@ -92,7 +93,7 @@ const Home: NextPage = () => {
             <h3 className='heading-4 text-dark-brown'>Diskusi 5 Teratas</h3>
             {
               TopicList.map((topic) => (
-                <TopicsComponent id={topic.id} title={topic.title} slug={topic.title} />
+                <TopicsComponent key={topic.id} id={topic.id} title={topic.title} slug={topic.title} />
               ))
             }
           </div>
