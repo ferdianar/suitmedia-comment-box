@@ -1,5 +1,8 @@
 ## Suitmedia Comment Box
 
+Frontend : Next.js React TypeScript JQuery SASS React Icons ( Font Awesome ) Vercel
+Backend  : JSON Server json Heroku ( https://github.com/ferdianar/suitmedia-fake-server-api )
+
 Install dependencies **npm install** dan Untuk menjalankan nya Project di local computer **npm run dev**
 
 Buka di browser [http://localhost:3000](http://localhost:3000) untuk melihat hasilnya
