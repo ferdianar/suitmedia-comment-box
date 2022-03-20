@@ -44,7 +44,7 @@ Dan ini ketika berada di ukuran layar diatas 1440px. Website akan otomatis terwr
 
 Dan yang terakhir ini adalah tampilan mobile, ketika ada di bawah 760px struktur nya akan seperti ini
 
-<p align="left">
+<p align="left" style="display: flex">
   <img width="50%" src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/header.png"/>
   <img width="50%" src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/side.png"/>
 </p>
