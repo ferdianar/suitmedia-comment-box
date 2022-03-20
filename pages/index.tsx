@@ -20,18 +20,22 @@ const Home: NextPage = () => {
   useEffect(() => {
     console.log("Side Effect Test")
 
+    // Request
     $.ajax({
       method: 'GET',
-      url: "http://localhost:5500/comments"
+      url: "https://suitmedia-fake-server-api.herokuapp.com/comments"
     }).done(function (data) {
       if (console) {
         // console.log(data)
+
+        // Store data to state
         setComments(data)
       }
     })
 
   }, [])
 
+  // Log state
   // console.log(comments)
 
   return (
