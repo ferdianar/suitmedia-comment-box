@@ -1,33 +1,25 @@
-
 ## Suitmedia Comment Box
 
-First, run the development server:
+Install dependencies **npm install** dan Untuk menjalankan nya Project di local computer **npm run dev**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Buka di browser [http://localhost:3000](http://localhost:3000) untuk melihat hasilnya
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ini untuk tampilan homepage yang terdiri dari navbar dengan link category login dan register. Di bawah nya adalah content yang dibagi menjadi 2 side, main content dan aside / sidebar menu. Dan saya menerapkan dinamic routing yang ketika salah satu judul artikel menu di sorot ( hover ) akan keluar link url path dengan slug di pojok bawah.
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/homeandslug.png" alt="homepage" />
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Dan ketika di klik akan di arahkan ke halaman detail posts yang nanti kedepannya bisa di beri data artikel sehingga bisa lebih jelas lagi.
+<img src="https://github.com/ferdianar/suitmedia-fake-server-api/blob/master/assets/slugdinamicroute.png" alt="postdetail" />
+                                                                                                                    
+Terus dibawah ini adalah modal login. Dengan mengklik navigasi link **Login** nanti modal akan tampil. Dan disini sudah saya beri validasi ( Empty validation dan Email Validation ). Disini saya menggunakan Regular Expression ( RegExp ). Jadi seumpama tekan tombol submit dan field masih kosong, akan ada notifikasi merah di bawah field.
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/loginvalidation.png" alt="login" />
+                                                                                                                              
+Dan berikutnya Register Form, Ini juga sama metode validasi nya, muncul error ketika form kosong
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/registervalidation.png" alt="register" />
+                                                                                                                    
+Dan untuk Post Comment validasi nya semua field harus terisi, tetapi tidak perlu menggunakan email validasi. Untuk tombolnya ada submit untuk check valid, dan reset untuk menghapus semua karakter atau tulisan didalam fields. 
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/commentvalidation.png" alt="comment" />
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Dan ini ketika berada di ukuran layar diatas 1440px. Website akan otomatis terwrapping rapi, dan tidak berantakan / keluar area. Karena disini saya mensetting untuk maksimum lebar nya 1440 ( ukuran default desktop / Mac ), jadi ketika lebih dari itu otomatis akan wrap ke tengah.
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/wrapped.png" alt="wrapped" />
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
