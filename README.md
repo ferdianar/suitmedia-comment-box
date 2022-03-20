@@ -45,6 +45,6 @@ Dan ini ketika berada di ukuran layar diatas 1440px. Website akan otomatis terwr
 Dan yang terakhir ini adalah tampilan mobile, ketika ada di bawah 760px struktur nya akan seperti ini
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/header.png"/>
-  <img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/side.png"/>
+  <img width="50%" src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/header.png"/>
+  <img width="50%" src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/side.png"/>
 </p>
