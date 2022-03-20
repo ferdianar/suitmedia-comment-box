@@ -15,7 +15,7 @@ import Head from 'next/head'
 const Home: NextPage = () => {
   const [comments, setComments] = useState<ICommentsList[]>([])
   const [replies, setReplies] = useState([])
-  const [count, setCount] = useState(22)
+  const [count, setCount] = useState(3)
 
   useEffect(() => {
     console.log("Side Effect Test")
@@ -34,6 +34,9 @@ const Home: NextPage = () => {
     })
 
   }, [])
+
+  const Like = () => setCount(count + 1)
+  const Dislike = () => setCount(count - 1)
 
   // Log state
   // console.log(comments)
@@ -75,9 +78,9 @@ const Home: NextPage = () => {
                       date={itemsComment.date}
                       message={itemsComment.message}
                       images={itemsComment.images}
-                      increment={""}
-                      point={itemsComment.point}
-                      decrement={""}
+                      increment={Like}
+                      point={count}
+                      decrement={Dislike}
                     />
                   ))
                 }
