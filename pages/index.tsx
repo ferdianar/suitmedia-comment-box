@@ -15,23 +15,30 @@ import Head from 'next/head'
 const Home: NextPage = () => {
   const [comments, setComments] = useState<ICommentsList[]>([])
   const [replies, setReplies] = useState([])
-  const [count, setCount] = useState(22)
+  const [count, setCount] = useState(3)
 
   useEffect(() => {
     console.log("Side Effect Test")
 
+    // Request
     $.ajax({
       method: 'GET',
-      url: "http://localhost:5500/comments"
+      url: "https://suitmedia-fake-server-api.herokuapp.com/comments"
     }).done(function (data) {
       if (console) {
         // console.log(data)
+
+        // Store data to state
         setComments(data)
       }
     })
 
   }, [])
 
+  const Like = () => setCount(count + 1)
+  const Dislike = () => setCount(count - 1)
+
+  // Log state
   // console.log(comments)
 
   return (
@@ -71,9 +78,9 @@ const Home: NextPage = () => {
                       date={itemsComment.date}
                       message={itemsComment.message}
                       images={itemsComment.images}
-                      increment={""}
-                      point={itemsComment.point}
-                      decrement={""}
+                      increment={Like}
+                      point={count}
+                      decrement={Dislike}
                     />
                   ))
                 }
