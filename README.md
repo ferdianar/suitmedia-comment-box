@@ -15,7 +15,7 @@ Buka di browser [http://localhost:3000](http://localhost:3000) untuk melihat has
 
 Ini untuk tampilan homepage yang terdiri dari navbar dengan link category login dan register. Di bawah nya adalah content yang dibagi menjadi 2 side, main content dan aside / sidebar menu. Dan saya menerapkan dinamic routing yang ketika salah satu judul artikel menu di sorot ( hover ) akan keluar link url path dengan slug di pojok bawah.
 
-<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/homeandslug.png" alt="homepage" />
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/homeandslug.png?token=GHSAT0AAAAAABMD4XBVKNTCN35RE4A6VX26YRXYJCA" alt="homepage" />
 
 
 Dan ketika di klik akan di arahkan ke halaman detail posts yang nanti kedepannya bisa di beri data artikel sehingga bisa lebih jelas lagi.
