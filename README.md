@@ -29,19 +29,19 @@ Terus dibawah ini adalah modal login. Dengan mengklik navigasi link **Login** na
                                                                                                                               
 Dan berikutnya Register Form, Ini juga sama metode validasi nya, muncul error ketika form kosong
 
-<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/registervalidation.png" alt="register" />
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/registervalidation.png?token=GHSAT0AAAAAABMD4XBUCA3M22KWMKNTSUREYRXYHHQ" alt="register" />
 
                                                                                                                     
 Dan untuk Post Comment validasi nya semua field harus terisi, tetapi tidak perlu menggunakan email validasi. Untuk tombolnya ada submit untuk check valid, dan reset untuk menghapus semua karakter atau tulisan didalam fields. 
 
-<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/commentvalidation.png" alt="comment" />
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/commentvalidation.png?token=GHSAT0AAAAAABMD4XBVHEPMBMQGKPXUHKDAYRXYHYQ" alt="comment" />
 
 
 Dan ini ketika berada di ukuran layar diatas 1440px. Website akan otomatis terwrapping rapi, dan tidak berantakan / keluar area. Karena disini saya mensetting untuk maksimum lebar nya 1440 ( ukuran default desktop / Mac ), jadi ketika lebih dari itu otomatis akan wrap ke tengah.
 
-<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/wrapped.png" alt="wrapped" />
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/wrapped.png?token=GHSAT0AAAAAABMD4XBVLR4M7LKT3H5X6PXCYRXYIGA" alt="wrapped" />
 
 
 Dan yang terakhir ini adalah tampilan mobile, ketika ada di bawah 760px struktur nya akan seperti ini
 
-<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/previewheader.png"/>
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/previewheader.png?token=GHSAT0AAAAAABMD4XBVM3UNSUANJN236K2WYRXYIQQ"/>
