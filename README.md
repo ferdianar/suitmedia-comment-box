@@ -25,7 +25,7 @@ Dan ketika di klik akan di arahkan ke halaman detail posts yang nanti kedepannya
                                                                                                             
 Terus dibawah ini adalah modal login. Dengan mengklik navigasi link **Login** nanti modal akan tampil. Dan disini sudah saya beri validasi ( Empty validation dan Email Validation ). Disini saya menggunakan Regular Expression ( RegExp ). Jadi seumpama tekan tombol submit dan field masih kosong, akan ada notifikasi merah di bawah field.
 
-<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/loginvalidation.png" alt="login" />
+<img src="https://raw.githubusercontent.com/ferdianar/suitmedia-fake-server-api/master/assets/loginvalidation.png?token=GHSAT0AAAAAABMD4XBU6OHVQIB2NURQ2OUGYRXYGDQ" alt="login" />
                                                                                                                               
 Dan berikutnya Register Form, Ini juga sama metode validasi nya, muncul error ketika form kosong
 
